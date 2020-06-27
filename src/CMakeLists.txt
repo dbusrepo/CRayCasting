@@ -2,8 +2,8 @@ set(APP_EXE "CRayRaycasting")
 
 add_executable(${APP_EXE} main.c)
 
-file(GLOB SOURCES "*.c")  # "utilities/*.c" per le subdir ?
-file(GLOB HEADERS "*.h")
+file(GLOB_RECURSE SOURCES "*.c")  # "utilities/*.c" per le subdir ?
+file(GLOB_RECURSE HEADERS "*.h")
 
 target_sources(${APP_EXE}
         PRIVATE
