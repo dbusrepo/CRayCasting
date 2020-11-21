@@ -1,1 +1,1 @@
-# CRayCasting
+# Ray Casting in C
